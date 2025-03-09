@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { MyDocument2 } from "@/components/MyDocument2";
+import { MyDocument } from "@/components/MyDocument";
 import { PDFViewer } from "@react-pdf/renderer";
 
 export default function ViewPage() {
@@ -17,7 +17,7 @@ export default function ViewPage() {
 			<div className="w-full h-[80vh]">
 				{isClient ? (
 					<PDFViewer className="w-full h-full">
-						<MyDocument2 />
+						<MyDocument />
 					</PDFViewer>
 				) : (
 					<p>Loading PDF Viewer...</p>
@@ -26,4 +26,3 @@ export default function ViewPage() {
 		</div>
 	);
 }
-

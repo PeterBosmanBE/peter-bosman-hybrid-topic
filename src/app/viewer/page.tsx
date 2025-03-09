@@ -24,6 +24,11 @@ export default function Home() {
 							Example 3
 						</Button>
 					</Link>
+					<Link href="/viewer/example4" className="flex-1">
+						<Button className="w-full" size="lg">
+							Example 4
+						</Button>
+					</Link>
 				</div>
 			</main>
 		</div>
