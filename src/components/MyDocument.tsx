@@ -3,6 +3,8 @@
 import {
 	Document,
 	Image,
+	Link,
+	Note,
 	Page,
 	StyleSheet,
 	Text,
@@ -48,6 +50,9 @@ const styles = StyleSheet.create({
 		padding: 10,
 		flexGrow: 1,
 	},
+	note: {
+		backgroundColor: "yellow",
+	},
 });
 
 export const MyDocument = () => (
@@ -58,63 +63,67 @@ export const MyDocument = () => (
 				<Image src="/coolefoto.png" style={styles.image} />
 			</View>
 			<View>
+				<Link src={"https://www.youtube.com/watch?v=oHg5SJYRHA0"}>
+					Klik hier voor een verrassing
+				</Link>
 				<Text style={styles.text}>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-					Praesent feugiat egestas ipsum vel pretium. Aliquam eu metus
-					neque. Suspendisse consectetur, ante et ornare dignissim,
-					sem massa efficitur dolor, in vulputate urna odio eu metus.
-					Ut eros sem, interdum sit amet justo id, mollis interdum
-					dui. Nulla vel scelerisque ex. Etiam ut porta massa.
-					Vestibulum vel risus est. Vestibulum in tortor vel eros
-					suscipit euismod at vitae eros. Maecenas congue, dui sit
-					amet feugiat euismod, risus nulla laoreet magna, et
-					ullamcorper tellus mauris sed nulla. In tincidunt diam
-					tortor. Morbi purus tellus, faucibus at maximus a, molestie
-					nec velit. Nullam a urna ullamcorper, sagittis mi sodales,
-					scelerisque lectus. Fusce id ex vel augue auctor vulputate
-					sed id enim. Duis molestie nulla purus, at mattis leo
-					posuere vel. Mauris ullamcorper leo at est laoreet volutpat.
-					Nunc mattis eros lacus, nec lacinia purus vehicula quis.
-					Nunc accumsan purus eu mattis pretium. Curabitur sit amet
-					sem sed urna luctus lobortis. Cras ut ipsum felis. Integer
-					id dictum elit. Sed id sollicitudin lacus, eget bibendum mi.
-					Maecenas consectetur pellentesque quam. Ut venenatis tellus
-					at arcu efficitur auctor. Vestibulum commodo posuere risus a
-					tempor. Ut fringilla ante non risus feugiat congue. Aenean
-					cursus massa lectus, ac lobortis leo tempus ac. Vestibulum
-					ut lectus sit amet eros imperdiet laoreet. Sed at eros eget
-					nisi maximus molestie. Phasellus commodo molestie placerat.
-					Maecenas facilisis, massa vel ultricies congue, ex dui
-					tristique velit, et pharetra nibh mauris sed dolor.
-					Vestibulum ante ipsum primis in faucibus orci luctus et
-					ultrices posuere cubilia curae; Etiam non massa vel velit
-					blandit tincidunt ac ut leo. Nam a iaculis sapien, at
-					commodo purus. Quisque malesuada pulvinar massa, at pharetra
-					nunc aliquet quis. Vivamus non rhoncus velit, in condimentum
-					diam. In et est erat. Ut fermentum ipsum vel neque
-					venenatis, nec elementum velit sodales. Mauris justo lorem,
-					ultricies ac lobortis ut, facilisis vitae eros. Donec
-					egestas est eu magna sodales accumsan. Fusce consequat enim
-					efficitur tempus tempor. Integer venenatis in tortor non
-					consequat. Fusce eget interdum purus. Nulla vitae tortor
-					elit. Pellentesque laoreet metus sapien. Duis sit amet lorem
-					molestie, dignissim mi quis, auctor tellus. Vivamus
-					ultricies cursus scelerisque. Curabitur hendrerit magna a
-					massa venenatis aliquet. Proin ac faucibus felis, quis
-					faucibus dolor. Donec vitae ullamcorper felis. Vestibulum
-					consequat imperdiet condimentum. Vivamus ullamcorper erat
-					nec dolor facilisis consectetur. Vivamus eget ipsum eget
-					nulla lacinia fermentum. Cras non ex at massa elementum
-					scelerisque. Mauris lobortis semper gravida. Fusce sed elit
-					ac lacus luctus tincidunt. Donec molestie nibh nisl, eget
-					scelerisque quam cursus ac. Mauris eget nisi tortor. Orci
-					varius natoque penatibus et magnis dis parturient montes,
-					nascetur ridiculus mus. Curabitur euismod sem mi, venenatis
-					euismod orci fermentum egestas. Morbi ac porta nisi. Sed vel
-					eros mauris. Morbi eleifend laoreet fringilla. Aenean in
-					turpis id enim vestibulum rhoncus. Pellentesque rutrum enim
-					massa, accumsan fringilla nunc vestibulum ut. Pellentesque
-					bibendum commodo risus non fermentum. Sed ac efficitur arcu.
+					<Note style={styles.note}>Lorem ipsum dolor sit amet</Note>,
+					consectetur adipiscing elit. Praesent feugiat egestas ipsum
+					vel pretium. Aliquam eu metus neque. Suspendisse
+					consectetur, ante et ornare dignissim, sem massa efficitur
+					dolor, in vulputate urna odio eu metus. Ut eros sem,
+					interdum sit amet justo id, mollis interdum dui. Nulla vel
+					scelerisque ex. Etiam ut porta massa. Vestibulum vel risus
+					est. Vestibulum in tortor vel eros suscipit euismod at vitae
+					eros. Maecenas congue, dui sit amet feugiat euismod, risus
+					nulla laoreet magna, et ullamcorper tellus mauris sed nulla.
+					In tincidunt diam tortor. Morbi purus tellus, faucibus at
+					maximus a, molestie nec velit. Nullam a urna ullamcorper,
+					sagittis mi sodales, scelerisque lectus. Fusce id ex vel
+					augue auctor vulputate sed id enim. Duis molestie nulla
+					purus, at mattis leo posuere vel. Mauris ullamcorper leo at
+					est laoreet volutpat. Nunc mattis eros lacus, nec lacinia
+					purus vehicula quis. Nunc accumsan purus eu mattis pretium.
+					Curabitur sit amet sem sed urna luctus lobortis. Cras ut
+					ipsum felis. Integer id dictum elit. Sed id sollicitudin
+					lacus, eget bibendum mi. Maecenas consectetur pellentesque
+					quam. Ut venenatis tellus at arcu efficitur auctor.
+					Vestibulum commodo posuere risus a tempor. Ut fringilla ante
+					non risus feugiat congue. Aenean cursus massa lectus, ac
+					lobortis leo tempus ac. Vestibulum ut lectus sit amet eros
+					imperdiet laoreet. Sed at eros eget nisi maximus molestie.
+					Phasellus commodo molestie placerat. Maecenas facilisis,
+					massa vel ultricies congue, ex dui tristique velit, et
+					pharetra nibh mauris sed dolor. Vestibulum ante ipsum primis
+					in faucibus orci luctus et ultrices posuere cubilia curae;
+					Etiam non massa vel velit blandit tincidunt ac ut leo. Nam a
+					iaculis sapien, at commodo purus. Quisque malesuada pulvinar
+					massa, at pharetra nunc aliquet quis. Vivamus non rhoncus
+					velit, in condimentum diam. In et est erat. Ut fermentum
+					ipsum vel neque venenatis, nec elementum velit sodales.
+					Mauris justo lorem, ultricies ac lobortis ut, facilisis
+					vitae eros. Donec egestas est eu magna sodales accumsan.
+					Fusce consequat enim efficitur tempus tempor. Integer
+					venenatis in tortor non consequat. Fusce eget interdum
+					purus. Nulla vitae tortor elit. Pellentesque laoreet metus
+					sapien. Duis sit amet lorem molestie, dignissim mi quis,
+					auctor tellus. Vivamus ultricies cursus scelerisque.
+					Curabitur hendrerit magna a massa venenatis aliquet. Proin
+					ac faucibus felis, quis faucibus dolor. Donec vitae
+					ullamcorper felis. Vestibulum consequat imperdiet
+					condimentum. Vivamus ullamcorper erat nec dolor facilisis
+					consectetur. Vivamus eget ipsum eget nulla lacinia
+					fermentum. Cras non ex at massa elementum scelerisque.
+					Mauris lobortis semper gravida. Fusce sed elit ac lacus
+					luctus tincidunt. Donec molestie nibh nisl, eget scelerisque
+					quam cursus ac. Mauris eget nisi tortor. Orci varius natoque
+					penatibus et magnis dis parturient montes, nascetur
+					ridiculus mus. Curabitur euismod sem mi, venenatis euismod
+					orci fermentum egestas. Morbi ac porta nisi. Sed vel eros
+					mauris. Morbi eleifend laoreet fringilla. Aenean in turpis
+					id enim vestibulum rhoncus. Pellentesque rutrum enim massa,
+					accumsan fringilla nunc vestibulum ut. Pellentesque bibendum
+					commodo risus non fermentum. Sed ac efficitur arcu.
 					Suspendisse vulputate tempus enim sed auctor. Phasellus
 					mollis ac felis quis laoreet. Maecenas faucibus urna nec
 					massa interdum, id pretium libero congue. Nam et auctor
@@ -163,7 +172,7 @@ export const MyDocument = () => (
 				render={({ pageNumber, totalPages }) =>
 					`${pageNumber} / ${totalPages}`
 				}
-				fixed
+				fixed={true}
 			/>
 		</Page>
 	</Document>
