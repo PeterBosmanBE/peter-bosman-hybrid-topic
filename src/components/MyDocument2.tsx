@@ -6,7 +6,6 @@ import {
 	Page,
 	StyleSheet,
 	Text,
-	View,
 } from "@react-pdf/renderer";
 
 const styles = StyleSheet.create({
@@ -43,21 +42,13 @@ const styles = StyleSheet.create({
 		textAlign: "center",
 		color: "grey",
 	},
-	section: {
-		margin: 10,
-		padding: 10,
-		flexGrow: 1,
-	},
 });
 
-export const MyDocument = () => (
+export const MyDocument2 = () => (
 	<Document>
 		<Page size="A4" style={styles.body}>
-			<Text style={styles.title}>Section #1</Text>
-			<View style={styles.section}>
+				<Text style={styles.title}>Section #1</Text>
 				<Image src="/coolefoto.png" style={styles.image} />
-			</View>
-			<View>
 				<Text style={styles.text}>
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 					Praesent feugiat egestas ipsum vel pretium. Aliquam eu metus
@@ -157,7 +148,6 @@ export const MyDocument = () => (
 					accumsan. Quisque enim lorem, accumsan ut dui vitae,
 					bibendum efficitur ex.
 				</Text>
-			</View>
 			<Text
 				style={styles.pageNumber}
 				render={({ pageNumber, totalPages }) =>
