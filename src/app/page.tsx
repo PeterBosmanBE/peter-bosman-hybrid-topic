@@ -8,17 +8,15 @@ export default function Home() {
 				<h1 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl md:text-5xl">
 					Welcome
 				</h1>
-
 				<div className="flex w-full max-w-3xl flex-col justify-between gap-4 sm:flex-row">
-					<Link href="/download" className="flex-1">
-						<Button className="w-full" size="lg">
-							Download PDF
-						</Button>
-					</Link>
-
 					<Link href="/viewer" className="flex-1">
 						<Button className="w-full" size="lg">
 							View PDF
+						</Button>
+					</Link>
+					<Link href="/download" className="flex-1">
+						<Button className="w-full" size="lg">
+							Download PDF
 						</Button>
 					</Link>
 				</div>
