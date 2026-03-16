@@ -1,13 +1,18 @@
 import { Button, Text, Heading, Hr } from "@react-email/components";
-import * as React from "react";
 import BaseEmail from "./baseEmail";
 
-export default function WelcomeEmail() {
+interface WelcomeEmailProps {
+  name?: string;
+}
+
+export default function WelcomeEmail({ name }: WelcomeEmailProps) {
+  const displayName = name?.trim();
+
   return (
     <BaseEmail>
 
       <Heading style={{ fontSize: "22px", color: "#111", margin: "0 0 8px" }}>
-        Hey Alex 👋
+        Hey {displayName} 👋
       </Heading>
 
       <Text style={{ color: "#555", fontSize: "15px", lineHeight: "1.6" }}>
