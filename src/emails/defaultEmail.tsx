@@ -8,7 +8,7 @@ export default function DefaultEmail() {
         <Container style={{ backgroundColor: "#ffffff", margin: "40px auto", padding: "32px", borderRadius: "8px", maxWidth: "480px" }}>
 
           <Heading style={{ fontSize: "22px", color: "#111", margin: "0 0 8px" }}>
-            Hey Alex 👋
+            Hey There 👋
           </Heading>
 
           <Text style={{ color: "#555", fontSize: "15px", lineHeight: "1.6" }}>
