@@ -1,4 +1,4 @@
-import { Button, Text, Heading, Hr } from "@react-email/components";
+import { Button, Text, Heading, Hr, Img } from "@react-email/components";
 import BaseEmailWithPreview from "./baseEmailWithPreview";
 
 interface PromotionalEmailProps {
@@ -7,6 +7,7 @@ interface PromotionalEmailProps {
 }
 
 export default function PromotionalEmail({ name }: PromotionalEmailProps) {
+  const URL = process.env.BASE_URL;
   const displayName = name?.trim() || "there";
 
   return (
@@ -22,8 +23,14 @@ export default function PromotionalEmail({ name }: PromotionalEmailProps) {
       </Text>
 
       <Text style={{ color: "#555", fontSize: "15px", lineHeight: "1.6", marginTop: "16px" }}>
-        Also you&apos;re not getting that iPhone 15 Pro Max for free, just so you know. LOL
+        Also you&apos;re not getting that iPhone for free, just so you know. LOL
       </Text>
+
+      <Img
+        src={URL + "/laughing.png"}
+        alt="Laughing Image"
+        style={{ maxWidth: "100%", height: "auto", margin: "16px 0" }}
+      />
 
       <Button
         href="https://example.com/shop"
