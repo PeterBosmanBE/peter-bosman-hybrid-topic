@@ -6,7 +6,7 @@ interface WelcomeEmailProps {
 }
 
 export default function WelcomeEmail({ name }: WelcomeEmailProps) {
-  const displayName = name?.trim();
+  const displayName = name?.trim() || "there";
 
   return (
     <BaseEmail>
@@ -30,7 +30,7 @@ export default function WelcomeEmail({ name }: WelcomeEmailProps) {
       <Hr style={{ margin: "32px 0", borderColor: "#eee" }} />
 
       <Text style={{ color: "#aaa", fontSize: "13px" }}>
-        Questions? Just reply to this email — we&apos;re happy to help.
+        Questions? Don&apos;t reply to this email — we don&apos;t care.
       </Text>
 
     </BaseEmail>

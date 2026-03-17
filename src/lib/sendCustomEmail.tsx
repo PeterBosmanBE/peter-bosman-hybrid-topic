@@ -19,7 +19,7 @@ const emailHtml = await render(<CustomEmail name={name} message={message} />);
 const options = {
   from: `"Peter Bosman's No Reply Mail" <noreply@peterbosman.be>`,
   to,
-  subject: 'hello world',
+  subject: 'A Custom Email Just for You!',
   html: emailHtml,
 };
 

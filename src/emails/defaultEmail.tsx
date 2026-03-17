@@ -25,7 +25,7 @@ export default function DefaultEmail() {
           <Hr style={{ margin: "32px 0", borderColor: "#eee" }} />
 
           <Text style={{ color: "#aaa", fontSize: "13px" }}>
-            Questions? Just reply to this email — we&apos;re happy to help.
+            Questions? Don&apos;t reply to this email — we don&apos;t care.
           </Text>
 
         </Container>

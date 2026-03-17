@@ -1,16 +1,17 @@
-import { Button, Text, Heading, Hr } from "@react-email/components";
+import { Text, Heading, Hr } from "@react-email/components";
 import BaseEmail from "./baseEmail";
 
-interface WelcomeEmailProps {
+interface CustomEmailProps {
   name?: string;
   message?: string;
 }
 
-export default function CustomEmail({ name, message }: WelcomeEmailProps) {
-  const displayName = name?.trim();
-  const displayMessage = message?.trim();
+export default function CustomEmail({ name, message }: CustomEmailProps) {
+  const displayName = name?.trim() || "there";
+  const displayMessage = message?.trim() || "Custom message here!";
 
   return (
+    
     <BaseEmail>
 
       <Heading style={{ fontSize: "22px", color: "#111", margin: "0 0 8px" }}>
@@ -24,7 +25,7 @@ export default function CustomEmail({ name, message }: WelcomeEmailProps) {
       <Hr style={{ margin: "32px 0", borderColor: "#eee" }} />
 
       <Text style={{ color: "#aaa", fontSize: "13px" }}>
-        Questions? Don&apos;t reply to this email — we&apos;re happy to help.
+        Questions? Don&apos;t reply to this email — we don&apos;t care.
       </Text>
 
     </BaseEmail>
