@@ -32,6 +32,13 @@ export default function Home() {
           >
             Open Send Email Page 3
           </Link>
+
+          <Link
+            href="/send-email/4"
+            className="inline-flex items-center justify-between rounded-xl border border-white/10 bg-zinc-800/80 px-4 py-3 font-medium text-zinc-100 transition hover:bg-zinc-700"
+          >
+            Open Send Email Page 4
+          </Link>
         </div>
       </section>
     </main>
