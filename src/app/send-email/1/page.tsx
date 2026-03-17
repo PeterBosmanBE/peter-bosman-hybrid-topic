@@ -2,7 +2,6 @@ import { sendDefaultEmail } from "../../../lib/sendDefaultEmail";
 import { z } from "zod";
 
 const sendEmailSchema = z.object({
-  name: z.string().trim().min(1, "Name is required"),
   to: z.email("Enter a valid email address"),
 });
 
