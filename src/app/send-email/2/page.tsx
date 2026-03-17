@@ -1,4 +1,4 @@
-import { sendEmail } from "./sendEmail";
+import { sendWelcomeEmail } from "../../../lib/sendWelcomeEmail";
 import { z } from "zod";
 
 const sendEmailSchema = z.object({
@@ -15,21 +15,18 @@ export default function TestPage() {
       to: formData.get("to"),
     });
 
-    await sendEmail(name, to);
+    await sendWelcomeEmail(name, to);
   }
 
   return (
     <main className="min-h-screen bg-zinc-950 px-4 py-16 sm:px-6 lg:px-8">
 
       <section className="relative mx-auto w-full max-w-lg rounded-2xl border border-white/10 bg-zinc-900/70 p-6 shadow-2xl backdrop-blur sm:p-8">
-        <p className="mb-3 inline-flex rounded-full bg-white/10 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-zinc-200">
-          Email Tester
-        </p>
         <h1 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
           Send a Welcome Email
         </h1>
         <p className="mt-3 text-sm leading-6 text-slate-300 sm:text-base">
-          Enter a recipient name and email address, then send a styled test email.
+          Enter your name and email address, then send a test welcome email.
         </p>
 
         <form action={sendEmailAction} className="mt-8 space-y-5">
